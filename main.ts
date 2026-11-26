@@ -4,7 +4,8 @@
 // The line is assembled from named parts so the program is genuinely
 // authored, not a string literal dump: a warning, the confession that
 // the mess is structural, and the consequence that lands last.
-import { mkdirSync, writeFileSync, readFileSync, createHash } from "node:fs";
+import { mkdirSync, writeFileSync, readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join } from "node:path";
 
 const PARTS = {
